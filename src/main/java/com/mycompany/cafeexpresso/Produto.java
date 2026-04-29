@@ -5,7 +5,12 @@ public class Produto {
     double precoUnitario;
     
     
-    // Construtor
+    // Construtor vazio
+    public Produto() {
+        
+    }
+        // Construtor
+
     public Produto(String nome, double precoUnitario) {
         this.nome = nome;
         this.precoUnitario = precoUnitario;
@@ -18,9 +23,6 @@ public class Produto {
     public double getPrecoUnitario() {
         return precoUnitario;
     }
-    public int somar(int a, int b) {
-        return a+b;
-    }
-        
+
     
 }
