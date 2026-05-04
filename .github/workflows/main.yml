@@ -15,7 +15,7 @@ env:
   # Corrige o aviso de depreciação forçando o uso do Node.js 24 (padrão em 2026)
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
   # Centraliza a versão do Java para facilitar mudanças futuras
-  JAVA_VERSION: '17'
+  JAVA_VERSION: '24'
 
 # Lista de tarefas (jobs) que o GitHub irá executar
 jobs:
