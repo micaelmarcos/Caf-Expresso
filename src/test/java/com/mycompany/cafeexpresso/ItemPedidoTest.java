@@ -5,12 +5,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 class ItemPedidoTest {
-    
-    @beforeEach
-    void setUp() {
-
-    }
-
 
     // Primeiro teste: Criar um ItemPedido com dados corretos e verificar se os atributos estão sendo atribuídos corretamente.
 
@@ -20,7 +14,6 @@ class ItemPedidoTest {
         Produto produtoEsperado = new Produto("Café com Leite", 5.50); // cria um produto esperado para o teste
         ItemPedido instance = new ItemPedido(2, produtoEsperado); // Instancia um objeto da classe ItemPedido
 
-        // Verificação
         assertAll("Verificação de atributos do item pedido",
             () -> assertEquals(2, instance.getQuantidade(), "A quantidade deve ser igual ao fornecido"),
             () -> assertEquals(produtoEsperado, instance.getProduto(), "O produto deve ser igual ao fornecido")
@@ -39,4 +32,15 @@ class ItemPedidoTest {
         assertEquals(3, instance.getQuantidade(), "A quantidade deve ser atualizada para o novo valor");
     }
     
+    @Test
+    void devePermitirAlterarProdutoDoItemPedido() {
+        System.out.println("Teste Alterar Produto do ItemPedido");
+        Produto produtoInicial = new Produto("Café com Leite", 5.50);
+        Produto produtoNovo = new Produto("Café Preto", 4.00);
+        ItemPedido instance = new ItemPedido(2, produtoInicial); // Instancia um objeto da classe ItemPedido
+
+        instance.setProduto(produtoNovo); // Altera o produto para o novo produto
+
+        assertEquals(produtoNovo, instance.getProduto(), "O produto deve ser atualizado para o novo valor");
+    }
 }
