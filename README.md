@@ -1,5 +1,5 @@
 CAFÉ EXPRESSO
-Status do Projeto: 🚀 Em Desenvolvimento
+Status do Projeto: 🚀 Concluído
 
 📝 Descrição
 O Café Expresso é uma solução moderna para autoatendimento em estabelecimentos comerciais. Desenvolvido como projeto prático 
@@ -20,7 +20,7 @@ Pendente ➝ Pago ➝ Em Preparo ➝ Finalizado.
 Processamento de Pedidos: Automação do cálculo de valores e fechamento de conta.
 
 🛠️ Tecnologias Utilizadas
-Linguagem: Java
+Linguagem: Java/Maven
 
 Versionamento: Git & GitHub
 
@@ -41,3 +41,5 @@ Execute a classe principal através da sua IDE.
 
 👤 Autor
 Desenvolvido por Micael Marcos como estudante de Análise e Desenvolvimento de Sistemas.
+
+Ps. O objetivo é implementar os testes e praticar o envio para o GitHub, ficando pronto a estrutura de classes e testes do projeto.
