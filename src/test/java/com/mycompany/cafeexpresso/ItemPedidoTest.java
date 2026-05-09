@@ -41,6 +41,6 @@ class ItemPedidoTest {
 
         instance.setProduto(produtoNovo); // Altera o produto para o novo produto
 
-        assertEquals(produtoNovo, instance.getProduto(), "O produto deve ser atualizado para o novo valor");
+        assertEquals(produtoNovo, instance.getProduto(), "O produto deve ser atualizado para o novo");
     }
 }
