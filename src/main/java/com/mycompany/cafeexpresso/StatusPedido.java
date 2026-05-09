@@ -1,9 +1,4 @@
 package com.mycompany.cafeexpresso;
-public class StatusPedido {
-    public enum Status {
-        PENDENTE,
-        PAGO,
-        EM_PREPARO,
-        FINALIZADO
-    }
+public enum StatusPedido {
+        PENDENTE, PAGO, EM_PREPARO, FINALIZADO
 }
