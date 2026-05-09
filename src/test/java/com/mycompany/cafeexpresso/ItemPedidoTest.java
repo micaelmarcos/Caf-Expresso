@@ -43,4 +43,14 @@ class ItemPedidoTest {
 
         assertEquals(produtoNovo, instance.getProduto(), "O produto deve ser atualizado para o novo");
     }
+
+    @Test
+    void deveCalcularPrecoTotalDoItemPedido() {
+        Produto produto = new Produto("Café com Leite", 5.50);
+        ItemPedido instance = new ItemPedido(2, produto); // Instancia um objeto da classe ItemPedido
+
+        double precoTotalEsperado = 2 * 5.50; // Calcula o preço total esperado (quantidade * preço unitário)
+
+        assertEquals(precoTotalEsperado, instance.getPreco(), "O preço total do item pedido deve ser calculado corretamente");
+    }
 }
